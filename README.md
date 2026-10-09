@@ -48,7 +48,7 @@ Default location: `~/.config/keys/shortcuts.txt`. Override it with the `KEYS_FIL
 brew install fzf            # or your distro's package manager
 
 # 2. get keys
-git clone https://github.com/FlexToolCode/keys.git ~/.local/share/keys
+git clone https://github.com/flexdroide-ai/keys.git ~/.local/share/keys
 
 # 3. load it in your shell (~/.zshrc or ~/.bashrc)
 echo 'source ~/.local/share/keys/keys.sh' >> ~/.zshrc
@@ -67,7 +67,7 @@ source ~/.zshrc
 winget install junegunn.fzf
 
 # 2. get keys
-git clone https://github.com/FlexToolCode/keys.git $HOME\keys
+git clone https://github.com/flexdroide-ai/keys.git $HOME\keys
 
 # 3. load it in your profile
 Add-Content $PROFILE '. "$HOME\keys\keys.ps1"'
