@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  shell:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install zsh
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y zsh
+      - name: shellcheck
+        if: runner.os == 'Linux'
+        run: shellcheck keys.sh tests/test.sh
+      - name: Test (bash)
+        run: bash tests/test.sh
+      - name: Test (zsh)
+        run: KEYS_TEST_SHELL=zsh bash tests/test.sh
+
+  powershell:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test (PowerShell 7)
+        shell: pwsh
+        run: ./tests/test.ps1
+      - name: Test (Windows PowerShell 5.1)
+        shell: powershell
+        run: ./tests/test.ps1

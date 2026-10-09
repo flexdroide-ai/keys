@@ -1,0 +1,40 @@
+# keys example file: the most useful system shortcuts on macOS and Windows.
+# Format: app | keys | action      (lines starting with # are ignored)
+# Copy it to ~/.config/keys/shortcuts.txt and make it yours.
+
+# --- macOS -------------------------------------------------------------
+macos      | ⌘Space           | Spotlight search
+macos      | ⌃Space           | switch keyboard input source (previous)
+macos      | ⌘Tab             | switch between apps
+macos      | ⌘`               | cycle windows of the current app
+macos      | ⌘W               | close window or tab
+macos      | ⌘Q               | quit app
+macos      | ⌘H               | hide app
+macos      | ⌘,               | settings of the current app
+macos      | ⌥⌘Esc            | force quit apps
+macos      | ⌃⌘Q              | lock screen
+macos      | ⌃⌘Space          | emoji and symbols
+macos      | ⇧⌘3              | screenshot: full screen to file
+macos      | ⇧⌘4              | screenshot: selected area to file
+macos      | ⌃⇧⌘4             | screenshot: selected area to clipboard
+macos      | ⇧⌘5              | screenshot and screen recording toolbar
+macos      | ⇧⌘.              | Finder: show/hide hidden files
+macos      | ⇧⌘G              | Finder: go to folder (type a path)
+macos      | ⌥⌘D              | show/hide the Dock
+
+# --- Windows -----------------------------------------------------------
+windows    | Win+Space        | switch keyboard input language
+windows    | Win+L            | lock screen
+windows    | Win+D            | show/hide desktop
+windows    | Win+E            | open File Explorer
+windows    | Win+R            | Run dialog
+windows    | Win+I            | Settings
+windows    | Win+X            | power user menu
+windows    | Win+V            | clipboard history
+windows    | Win+.            | emoji and symbols
+windows    | Win+Shift+S      | screenshot: selected area to clipboard
+windows    | Alt+Tab          | switch between windows
+windows    | Ctrl+Shift+Esc   | Task Manager
+windows    | Win+←/→          | snap window left/right
+windows    | Win+Ctrl+D       | new virtual desktop
+windows    | Win+Ctrl+←/→     | switch virtual desktop
